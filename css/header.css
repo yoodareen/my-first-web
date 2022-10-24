@@ -1,0 +1,162 @@
+header {
+  position: relative;
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+header .login-menu {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  header .login-menu {
+    display: none;
+  }
+}
+header .login-menu ul {
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  background: #000;
+}
+header .login-menu ul li {
+  width: 80px;
+  line-height: 25px;
+}
+header .login-menu ul li:last-child {
+  margin-right: 30px;
+}
+header .login-menu ul li a {
+  font-size: 1em;
+  color: #eee;
+}
+header .header-logo {
+  position: relative;
+  width: 95%;
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+header .header-logo h1 a {
+  display: block;
+  width: 270px;
+}
+header .header-logo h1 a img {
+  width: 100%;
+}
+header .menu-lg {
+  width: 95%;
+  max-width: 1600px;
+  margin: 10px auto;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 800px) {
+  header .menu-lg {
+    display: none;
+  }
+}
+header .menu-lg .menu-container .menu {
+  display: flex;
+}
+header .menu-lg .menu-container .menu > li {
+  height: 25px;
+  width: 80px;
+  text-align: center;
+}
+header .menu-lg .menu-container .menu > li:hover .sub-menu {
+  opacity: 1;
+}
+header .menu-lg .menu-container .menu > li > a {
+  position: relative;
+  display: block;
+  height: inherit;
+  line-height: 25px;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+header .menu-lg .menu-container .menu > li > a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 1px;
+  background: #000;
+  transition: width 0.3s;
+}
+header .menu-lg .menu-container .menu > li > a:hover {
+  color: #CCC;
+}
+header .menu-lg .menu-container .menu > li > a:hover::before {
+  width: 30px;
+}
+header .menu-lg .menu-container .menu > li .sub-menu {
+  opacity: 0;
+  transition: opacity 0.4s;
+  position: relative;
+  z-index: 10;
+}
+header .menu-lg .menu-container .menu > li .sub-menu > li {
+  height: 30px;
+}
+header .menu-lg .menu-container .menu > li .sub-menu > li > a {
+  display: block;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  background: rgba(238, 238, 238, 0.5);
+}
+header .menu-lg .menu-container .menu > li .sub-menu > li > a:hover {
+  color: #000;
+}
+header .menu-lg a {
+  line-height: 25px;
+  text-align: center;
+}
+header .mbtn {
+  width: 10%;
+  position: absolute;
+  top: 70%;
+  right: 7px;
+  height: 30px;
+}
+@media screen and (min-width: 800px) {
+  header .mbtn {
+    display: none;
+  }
+}
+header .mbtn i {
+  font-size: 1.2em;
+  color: #CCC;
+}
+header .menu-sm {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 200px;
+  text-align: right;
+  z-index: 10;
+  background: rgba(238, 238, 238, 0.3);
+}
+@media screen and (min-width: 800px) {
+  header .menu-sm {
+    display: none !important;
+  }
+}
+header .menu-sm .menu-container .menu > li {
+  padding: 5px 15px;
+}
+header .menu-sm .menu-container .menu > li > a:hover {
+  color: #000;
+}
+header .menu-sm .menu-container .menu > li .sub-menu {
+  display: none;
+}
+header .menu-sm .menu-container .menu > li .sub-menu li {
+  font-size: 0.9em;
+  padding: 3px 0;
+}/*# sourceMappingURL=header.css.map */
